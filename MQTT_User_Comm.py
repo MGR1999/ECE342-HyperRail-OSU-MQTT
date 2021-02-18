@@ -11,7 +11,7 @@ import paho.mqtt.client as mqtt #import the client lib
 print("connecting to broker")
 
 while(1):
-    command = input()
+    command = input("Please enter message: ")
     broker_address = "broker.hivemq.com" 
     client = mqtt.Client("Group-11-ESP32") #create/renew an instance of the client
     client.connect(broker_address) #connect to the broker
